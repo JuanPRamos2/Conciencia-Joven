@@ -3,26 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Conciencia Joven Internacional | Atrévete a manejar tu libertad</title>
-  <meta name="description" content="Conciencia Joven Internacional promueve los valores, la familia, los amigos y a Dios a través de NOVA, GN, Grupo Conciencia, Misiones CJI, Apostolados y COROCJI." />
+  <title>Conciencia Joven | Atrévete a manejar tu libertad</title>
+  <meta name="description" content="Conciencia Joven Internacional: un movimiento de jóvenes que vive la fe en comunidad. NOVA, GN, Conciencia, Misiones, Apostolados y COROCJI." />
   <link rel="canonical" href="https://concienciajoven.com/" />
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <meta property="og:title" content="Conciencia Joven Internacional" />
-  <meta property="og:description" content="Movimiento de jóvenes católicos. Juntas, retiros, misiones, apostolados y alabanza." />
+  <meta property="og:description" content="Un hogar para crecer en la fe, la amistad y el servicio." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://concienciajoven.com/" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
-          fontFamily: {
-            serif: ['"Cormorant Garamond"', "Georgia", "serif"],
-            sans: ['"Source Sans 3"', "Segoe UI", "sans-serif"],
-          },
+          fontFamily: { sans: ["Nunito", "Segoe UI", "sans-serif"] },
         },
       },
     };
@@ -30,23 +26,19 @@
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body class="font-sans antialiased">
-  <!-- Acceso directo para teclado -->
   <a class="skip-link" href="#inicio">Saltar al contenido</a>
 
-  <!-- ====================================================================
-       Barra de navegación fija, fondo marfil sólido
-       ==================================================================== -->
+  <!-- Barra superior: blanco y gris suave -->
   <header class="site-header">
     <div class="mx-auto flex h-full max-w-6xl items-center justify-between px-4 md:px-6">
-      <a href="#inicio" class="flex items-center gap-3" aria-label="Inicio Conciencia Joven">
-        <img src="assets/cruz.svg" alt="" width="40" height="40" />
-        <span class="leading-tight">
-          <span class="block font-serif text-xl font-semibold tracking-wide md:text-2xl">Conciencia Joven</span>
-          <span class="block text-[0.65rem] font-semibold uppercase tracking-[0.18em]">Internacional</span>
+      <a href="#inicio" class="flex items-center gap-2.5" aria-label="Inicio Conciencia Joven">
+        <img src="assets/cruz.svg" alt="" width="36" height="36" />
+        <span>
+          <span class="block text-lg font-extrabold leading-none text-[#3A3A3C] md:text-xl">Conciencia Joven</span>
+          <span class="block text-[0.7rem] font-bold text-[#6B6B70]">un movimiento, una familia</span>
         </span>
       </a>
-
-      <nav class="hidden items-center gap-1 lg:flex" aria-label="Principal">
+      <nav class="hidden items-center gap-0.5 lg:flex" aria-label="Principal">
         <a class="nav-link is-active" data-nav="inicio" href="#inicio">Inicio</a>
         <a class="nav-link" data-nav="nova" href="#nova">NOVA</a>
         <a class="nav-link" data-nav="gn" href="#gn">GN</a>
@@ -55,10 +47,7 @@
         <a class="nav-link" data-nav="apostolados" href="#apostolados">Apostolados</a>
         <a class="nav-link" data-nav="corocji" href="#corocji">COROCJI</a>
       </nav>
-
-      <button class="menu-btn lg:hidden" id="menu-btn" type="button" aria-expanded="false" aria-controls="nav-panel" aria-label="Abrir menú">
-        ☰
-      </button>
+      <button class="menu-btn lg:hidden" id="menu-btn" type="button" aria-expanded="false" aria-controls="nav-panel" aria-label="Abrir menú">☰</button>
     </div>
     <div class="nav-panel lg:hidden" id="nav-panel">
       <nav class="mx-auto grid max-w-6xl gap-1 px-4 py-3" aria-label="Móvil">
@@ -74,726 +63,552 @@
   </header>
 
   <main>
-    <!-- ==================================================================
-         Hero: Cruz de Conciencia Joven y diagrama radial de los 6 grupos
-         ================================================================== -->
-    <section class="hero band" id="inicio">
-      <div class="mx-auto grid max-w-6xl items-center gap-10 px-4 py-12 md:px-6 md:py-16 lg:grid-cols-[1.05fr_0.95fr] lg:py-20">
+    <!-- ============================================================
+         Inicio: Cruz de Conciencia Joven y diagrama radial
+         ============================================================ -->
+    <section class="hero" id="inicio">
+      <div class="mx-auto grid max-w-6xl items-center gap-10 px-4 py-12 md:px-6 md:py-16 lg:grid-cols-2 lg:py-20">
         <div>
-          <p class="section-kicker text-[#E8C547]">Movimiento católico de jóvenes</p>
-          <h1 class="mt-3 font-serif text-4xl font-semibold leading-tight md:text-6xl">
+          <p class="kicker text-[#6B6B70]">Hola, te estábamos esperando</p>
+          <h1 class="mt-3 text-4xl font-extrabold leading-tight text-[#3A3A3C] md:text-5xl">
             Atrévete a manejar tu libertad
           </h1>
-          <div class="ornament ornament-on-dark my-6 justify-start">
-            <span class="bar"></span>
-            <span class="mini-cross"></span>
-            <span class="bar"></span>
-          </div>
-          <p class="max-w-xl text-lg leading-relaxed text-[#EEE8D9]">
-            Conciencia Joven Internacional nace en San Pedro, Nuevo León, para promover
-            los valores, la familia, los amigos y a Dios. Lo hacemos con el ejemplo,
-            juntas semanales, retiros, misiones, apostolados y alabanza.
+          <p class="mt-5 max-w-lg text-lg leading-relaxed text-[#6B6B70]">
+            Somos Conciencia Joven Internacional: jóvenes de San Pedro y Monterrey
+            que quieren vivir la fe con amigos de verdad. Juntas, retiros, misiones,
+            apostolados y alabanza. Sin prisa. Con casa.
           </p>
-          <p class="mt-4 max-w-xl leading-relaxed text-[#D8D0C0]">
-            Al centro de nuestra identidad está la <strong>Cruz de Conciencia Joven</strong>.
-            Alrededor, seis brazos del mismo cuerpo: tres grupos de formación y tres
-            ministerios de servicio. Elige un sector del diagrama para ir a esa sección.
+          <p class="mt-4 max-w-lg leading-relaxed text-[#6B6B70]">
+            Toca un grupo en la cruz para conocernos. El centro es de todos.
           </p>
-          <div class="mt-8 flex flex-wrap gap-3">
-            <a class="btn-solid btn-gold" href="#nova">Conocer los grupos</a>
-            <a class="btn-solid btn-wa" data-contact="general" data-channel="wa" data-topic="Conciencia Joven" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-            <a class="btn-solid btn-ig" data-contact="general" data-channel="ig" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <div class="mt-7 flex flex-wrap gap-3">
+            <a class="btn btn-cj" href="#nova">Conocer los grupos</a>
+            <a class="btn btn-wa" data-contact="general" data-channel="wa" data-topic="Conciencia Joven" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+            <a class="btn btn-ghost" data-contact="general" data-channel="ig" target="_blank" rel="noopener noreferrer">Instagram</a>
           </div>
         </div>
 
-        <!-- Diagrama interactivo: 6 cuñas sólidas + cruz central -->
-        <div class="diagram-wrap">
-          <svg class="diagram" viewBox="0 0 400 400" role="img" aria-labelledby="diagTitle diagDesc">
-            <title id="diagTitle">Diagrama de identidad de Conciencia Joven</title>
-            <desc id="diagDesc">Cruz central rodeada por NOVA, GN, Conciencia, Misiones CJI, Apostolados y COROCJI. Cada sector enlaza a su sección.</desc>
-            <circle cx="200" cy="200" r="198" fill="#0E161C" />
-            <circle cx="200" cy="200" r="170" fill="#1A2530" />
-
-            <a href="#nova" aria-label="Ir a Grupo NOVA">
-              <path id="wedge-nova" class="diagram-wedge" stroke="#C9A227" stroke-width="2.5" d="M 169.0 146.31 L 121.0 63.17 A 158 158 0 0 1 279.0 63.17 L 231.0 146.31 A 62 62 0 0 0 169.0 146.31 Z" />
-              <text class="diagram-label diagram-label-light" x="200" y="92" text-anchor="middle">NOVA</text>
-            </a>
-            <a href="#gn" aria-label="Ir a Grupo GN">
-              <path id="wedge-gn" class="diagram-wedge" stroke="#C9A227" stroke-width="2.5" d="M 231.0 146.31 L 279.0 63.17 A 158 158 0 0 1 358.0 200.0 L 262.0 200.0 A 62 62 0 0 0 231.0 146.31 Z" />
-              <text class="diagram-label diagram-label-light" x="304" y="148" text-anchor="middle">GN</text>
-            </a>
-            <a href="#conciencia" aria-label="Ir a Grupo Conciencia">
-              <path id="wedge-conciencia" class="diagram-wedge" stroke="#C9A227" stroke-width="2.5" d="M 262.0 200.0 L 358.0 200.0 A 158 158 0 0 1 279.0 336.83 L 231.0 253.69 A 62 62 0 0 0 262.0 200.0 Z" />
-              <text class="diagram-label diagram-label-dark" x="304" y="262" text-anchor="middle">CONCIENCIA</text>
-            </a>
-            <a href="#misiones" aria-label="Ir a Misiones CJI">
-              <path id="wedge-misiones" class="diagram-wedge" stroke="#C9A227" stroke-width="2.5" d="M 231.0 253.69 L 279.0 336.83 A 158 158 0 0 1 121.0 336.83 L 169.0 253.69 A 62 62 0 0 0 231.0 253.69 Z" />
-              <text class="diagram-label diagram-label-light" x="200" y="318" text-anchor="middle">MISIONES</text>
-            </a>
-            <a href="#apostolados" aria-label="Ir a Apostolados">
-              <path id="wedge-apostolados" class="diagram-wedge" stroke="#C9A227" stroke-width="2.5" d="M 169.0 253.69 L 121.0 336.83 A 158 158 0 0 1 42.0 200.0 L 138.0 200.0 A 62 62 0 0 0 169.0 253.69 Z" />
-              <text class="diagram-label diagram-label-light" x="96" y="262" text-anchor="middle">APOSTOLADOS</text>
-            </a>
-            <a href="#corocji" aria-label="Ir a COROCJI">
-              <path id="wedge-corocji" class="diagram-wedge" stroke="#C9A227" stroke-width="2.5" d="M 138.0 200.0 L 42.0 200.0 A 158 158 0 0 1 121.0 63.17 L 169.0 146.31 A 62 62 0 0 0 138.0 200.0 Z" />
-              <text class="diagram-label diagram-label-light" x="96" y="148" text-anchor="middle">COROCJI</text>
-            </a>
-
-            <!-- Núcleo: Cruz de Conciencia Joven -->
-            <g class="cruz-core">
-              <circle cx="200" cy="200" r="58" fill="#1A2530" stroke="#E8C547" stroke-width="3" />
-              <circle cx="200" cy="196" r="28" fill="#C9A227" />
-              <circle cx="200" cy="196" r="22" fill="#1A2530" />
-              <rect x="194" y="168" width="12" height="62" rx="1.5" fill="#E8C547" />
-              <rect x="176" y="186" width="48" height="12" rx="1.5" fill="#E8C547" />
-              <circle cx="200" cy="192" r="5" fill="#1A2530" />
-              <circle cx="200" cy="192" r="2.5" fill="#E8C547" />
-            </g>
-          </svg>
-
-          <!-- Accesos equivalentes en móvil (el SVG sigue siendo clicable) -->
-          <div class="diagram-legend">
-            <a class="legend-btn" href="#nova"><span class="legend-swatch" style="background:#7A5610"></span>NOVA</a>
-            <a class="legend-btn" href="#gn"><span class="legend-swatch" style="background:#0E3B6C"></span>GN</a>
-            <a class="legend-btn" href="#conciencia"><span class="legend-swatch" style="background:#E6E6EA"></span>Conciencia</a>
-            <a class="legend-btn" href="#misiones"><span class="legend-swatch" style="background:#1B4D3E"></span>Misiones</a>
-            <a class="legend-btn" href="#apostolados"><span class="legend-swatch" style="background:#1A2530"></span>Apostolados</a>
-            <a class="legend-btn" href="#corocji"><span class="legend-swatch" style="background:#8E4A59"></span>COROCJI</a>
+        <div>
+          <div class="cruz-diagram" aria-label="Cruz de Conciencia Joven">
+            <div class="cruz-arm cruz-arm-v" aria-hidden="true"></div>
+            <div class="cruz-arm cruz-arm-h" aria-hidden="true"></div>
+            <div class="cruz-center">
+              <span>
+                <svg width="28" height="28" viewBox="0 0 32 32" aria-hidden="true">
+                  <rect x="14" y="4" width="4" height="24" rx="2" fill="#5C5C5F"></rect>
+                  <rect x="6" y="13" width="20" height="4" rx="2" fill="#5C5C5F"></rect>
+                </svg>
+                <strong>Conciencia<br />Joven</strong>
+              </span>
+            </div>
+            <a class="group-node node-nova" href="#nova">NOVA</a>
+            <a class="group-node node-gn" href="#gn">GN</a>
+            <a class="group-node node-conciencia" href="#conciencia">Conciencia</a>
+            <a class="group-node node-misiones" href="#misiones">Misiones</a>
+            <a class="group-node node-apostolados" href="#apostolados">Apostolados</a>
+            <a class="group-node node-corocji" href="#corocji">COROCJI</a>
+          </div>
+          <div class="group-chips">
+            <a class="chip" href="#nova"><i style="background:#C68A00"></i>NOVA</a>
+            <a class="chip" href="#gn"><i style="background:#0E3B6C"></i>GN</a>
+            <a class="chip" href="#conciencia"><i style="background:#4A4A4D"></i>Conciencia</a>
+            <a class="chip" href="#misiones"><i style="background:#1B4D3E"></i>Misiones</a>
+            <a class="chip" href="#apostolados"><i style="background:#1A2530"></i>Apostolados</a>
+            <a class="chip" href="#corocji"><i style="background:#A65B6D"></i>COROCJI</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ==================================================================
-         1. GRUPO NOVA — mostaza profundo
-         ================================================================== -->
-    <section class="theme-nova band border-t-[8px] border-[#C9A227]" id="nova">
-      <div class="mx-auto max-w-6xl px-4 py-14 md:px-6 md:py-20">
-        <p class="section-kicker text-[#E8C547]">01 · Formación</p>
-        <h2 class="mt-2 font-serif text-4xl font-semibold md:text-5xl">Grupo NOVA</h2>
-        <div class="ornament ornament-on-dark my-5 justify-start"><span class="bar"></span><span class="mini-cross"></span><span class="bar"></span></div>
-        <p class="max-w-3xl text-lg leading-relaxed">
-          NOVA es la puerta de entrada al movimiento: adolescentes que descubren la fe
-          en comunidad, con amistad verdadera y un ritmo claro de oración, juego y servicio.
-          El nombre recuerda una estrella nueva: cada generación que se acerca a Cristo
-          ilumina de nuevo a la Iglesia.
+    <!-- ============================================================
+         1. GRUPO NOVA — acento mostaza
+         ============================================================ -->
+    <section class="band-soft" id="nova">
+      <div class="mx-auto max-w-6xl px-4 py-14 md:px-6">
+        <p class="kicker title-nova">Grupo · 01</p>
+        <h2 class="mt-2 text-4xl font-extrabold title-nova">NOVA</h2>
+        <p class="mt-4 max-w-2xl text-lg leading-relaxed text-[#6B6B70]">
+          Si estás en secundaria y quieres un lugar donde ser tú, reír, orar y
+          hacer amigos, NOVA es tu casa. Una estrella nueva en el movimiento:
+          primer encuentro con Jesús, sin fórmulas raras.
         </p>
 
-        <div class="mt-10 grid gap-6 lg:grid-cols-2">
-          <article class="solid-card p-6">
-            <h3 class="font-serif text-2xl font-semibold">Qué es NOVA</h3>
+        <div class="mt-9 grid gap-5 lg:grid-cols-2">
+          <article class="card card-key nova p-6">
+            <h3 class="text-2xl font-extrabold">Qué es NOVA</h3>
             <ul class="mt-4 space-y-2 leading-relaxed">
-              <li>Juntas semanales de formación humana y cristiana.</li>
-              <li>Edades de secundaria: un primer hogar dentro de CJI.</li>
+              <li>Juntas semanales con juego, charla y oración.</li>
               <li>Acompañamiento cercano de consejeros y familias.</li>
-              <li>Preparación gradual a retiros, Horas Santas y apostolados.</li>
+              <li>Camino suave hacia retiros, Horas Santas y servicio.</li>
+              <li>Un grupo pequeño a propósito, para que nadie se pierda.</li>
             </ul>
           </article>
-          <article class="solid-card p-6">
-            <h3 class="font-serif text-2xl font-semibold">Fechas del semestre</h3>
-            <div class="mt-2">
-              <div class="date-row"><strong>Sábados</strong><span>Juntas 17:00–19:30 · sede parroquial</span></div>
-              <div class="date-row"><strong>26–27 sep</strong><span>Retiro de arranque «Estrella nueva»</span></div>
-              <div class="date-row"><strong>31 oct</strong><span>Vigilia de Todos los Santos</span></div>
-              <div class="date-row"><strong>5–6 dic</strong><span>Retiro de Adviento</span></div>
-              <div class="date-row"><strong>19 dic</strong><span>Convivio de Navidad con familias</span></div>
+          <article class="card p-6">
+            <h3 class="text-2xl font-extrabold text-[#3A3A3C]">Fechas de retiros</h3>
+            <div class="mt-2 text-[#6B6B70]">
+              <div class="date-row"><strong class="title-nova">Sábados</strong><span>Juntas 17:00–19:30</span></div>
+              <div class="date-row"><strong class="title-nova">26–27 sep</strong><span>Retiro de arranque «Estrella nueva»</span></div>
+              <div class="date-row"><strong class="title-nova">31 oct</strong><span>Vigilia de Todos los Santos</span></div>
+              <div class="date-row"><strong class="title-nova">5–6 dic</strong><span>Retiro de Adviento</span></div>
+              <div class="date-row"><strong class="title-nova">19 dic</strong><span>Convivio de Navidad con familias</span></div>
             </div>
           </article>
         </div>
 
-        <h3 class="mt-12 font-serif text-3xl font-semibold">Consejeros</h3>
-        <div class="mt-5 grid gap-5 sm:grid-cols-3">
-          <article class="solid-card overflow-hidden">
-            <div class="portrait bg-[#6E4E0E] text-[#E8C547]">AM</div>
+        <h3 class="mt-11 text-2xl font-extrabold text-[#3A3A3C]">Consejeros</h3>
+        <div class="mt-5 grid gap-4 sm:grid-cols-3">
+          <article class="card">
+            <div class="portrait nova">AM</div>
             <div class="p-4">
-              <h4 class="font-serif text-xl font-semibold">Ana M.</h4>
-              <p class="text-sm">Coordinadora de junta · 6.º semestre</p>
+              <h4 class="font-extrabold">Ana M.</h4>
+              <p class="text-sm text-[#6B6B70]">Coordinadora de junta</p>
             </div>
           </article>
-          <article class="solid-card overflow-hidden">
-            <div class="portrait bg-[#6E4E0E] text-[#E8C547]">LR</div>
+          <article class="card">
+            <div class="portrait nova">LR</div>
             <div class="p-4">
-              <h4 class="font-serif text-xl font-semibold">Luis R.</h4>
-              <p class="text-sm">Consejero de logística y retiros</p>
+              <h4 class="font-extrabold">Luis R.</h4>
+              <p class="text-sm text-[#6B6B70]">Retiros y logística</p>
             </div>
           </article>
-          <article class="solid-card overflow-hidden">
-            <div class="portrait bg-[#6E4E0E] text-[#E8C547]">SG</div>
+          <article class="card">
+            <div class="portrait nova">SG</div>
             <div class="p-4">
-              <h4 class="font-serif text-xl font-semibold">Sofía G.</h4>
-              <p class="text-sm">Acompañamiento de familias nuevas</p>
+              <h4 class="font-extrabold">Sofía G.</h4>
+              <p class="text-sm text-[#6B6B70]">Familias nuevas</p>
             </div>
           </article>
         </div>
 
-        <h3 class="mt-12 font-serif text-3xl font-semibold">Videos promocionales</h3>
-        <div class="mt-5 grid gap-5 md:grid-cols-2">
+        <h3 class="mt-11 text-2xl font-extrabold text-[#3A3A3C]">Videos promocionales</h3>
+        <div class="mt-5 grid gap-4 md:grid-cols-2">
           <div>
-            <button class="video-card p-6" type="button" data-video="video-nova-1">
+            <button class="video-card" type="button" data-video="video-nova-1">
               <span class="play" aria-hidden="true">▶</span>
-              <strong class="mt-4 block font-serif text-2xl">Bienvenida a NOVA</strong>
-              <span class="mt-1 block text-sm">Testimonio del semestre anterior</span>
+              <strong class="mt-3 block text-xl">Bienvenida a NOVA</strong>
+              <span class="mt-1 block text-sm text-[#6B6B70]">Así se siente una junta</span>
             </button>
-            <div class="video-frame mt-3 p-6" id="video-nova-1">El video oficial se publicará en el canal de Conciencia Joven. Mientras tanto, escríbenos por WhatsApp o Instagram.</div>
+            <div class="video-frame" id="video-nova-1">Cuando el video esté listo, este espacio mostrará el material oficial de NOVA.</div>
           </div>
           <div>
-            <button class="video-card p-6" type="button" data-video="video-nova-2">
+            <button class="video-card" type="button" data-video="video-nova-2">
               <span class="play" aria-hidden="true">▶</span>
-              <strong class="mt-4 block font-serif text-2xl">Retiro de arranque</strong>
-              <span class="mt-1 block text-sm">Crónica visual del retiro de septiembre</span>
+              <strong class="mt-3 block text-xl">Retiro de arranque</strong>
+              <span class="mt-1 block text-sm text-[#6B6B70]">Crónica del fin de semana</span>
             </button>
-            <div class="video-frame mt-3 p-6" id="video-nova-2">Espacio reservado para el recuento del retiro. Sustituye este bloque por el enlace de YouTube cuando esté listo.</div>
+            <div class="video-frame" id="video-nova-2">Espacio para el recuento del retiro. Se puede enlazar a YouTube desde el botón.</div>
           </div>
         </div>
 
-        <div class="contact-bar">
-          <p class="section-kicker text-[#E8C547]">Contacto directo · NOVA</p>
+        <div class="contact-row">
+          <p class="kicker title-nova">Escríbenos</p>
           <div class="mt-4 flex flex-wrap gap-3">
-            <a class="btn-solid btn-wa" data-contact="nova" data-channel="wa" data-topic="Grupo NOVA" target="_blank" rel="noopener noreferrer">WhatsApp NOVA</a>
-            <a class="btn-solid btn-ig" data-contact="nova" data-channel="ig" target="_blank" rel="noopener noreferrer">Instagram @novacji</a>
+            <a class="btn btn-wa" data-contact="nova" data-channel="wa" data-topic="Grupo NOVA" target="_blank" rel="noopener noreferrer">WhatsApp NOVA</a>
+            <a class="btn btn-nova" data-contact="nova" data-channel="ig" target="_blank" rel="noopener noreferrer">Instagram @novacji</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ==================================================================
-         2. GRUPO GN — azul marino profundo
-         ================================================================== -->
-    <section class="theme-gn band border-t-[8px] border-[#C9A227]" id="gn">
-      <div class="mx-auto max-w-6xl px-4 py-14 md:px-6 md:py-20">
-        <p class="section-kicker text-[#D7B15A]">02 · Formación</p>
-        <h2 class="mt-2 font-serif text-4xl font-semibold md:text-5xl">Grupo GN</h2>
-        <div class="ornament ornament-on-dark my-5 justify-start"><span class="bar"></span><span class="mini-cross"></span><span class="bar"></span></div>
-        <p class="max-w-3xl text-lg leading-relaxed">
-          GN — Generation Next — acompaña a jóvenes de preparatoria. Es el tiempo de
-          decidir con más libertad: vocación, amistades, fe adulta. Aquí se profundiza
-          la doctrina, se asume el servicio y se aprende a liderar sin perder la alegría.
+    <!-- ============================================================
+         2. GRUPO GN — acento azul marino
+         ============================================================ -->
+    <section class="band" id="gn">
+      <div class="mx-auto max-w-6xl px-4 py-14 md:px-6">
+        <p class="kicker title-gn">Grupo · 02</p>
+        <h2 class="mt-2 text-4xl font-extrabold title-gn">GN</h2>
+        <p class="mt-4 max-w-2xl text-lg leading-relaxed text-[#6B6B70]">
+          Generation Next es para prepa. Aquí se habla en serio —vocación, amistad,
+          fe adulta— sin perder la risa. Un puente hacia Conciencia, las misiones
+          y el coro.
         </p>
 
-        <div class="mt-10 grid gap-6 lg:grid-cols-2">
-          <article class="solid-card p-6">
-            <h3 class="font-serif text-2xl font-semibold">Qué es GN</h3>
+        <div class="mt-9 grid gap-5 lg:grid-cols-2">
+          <article class="card card-key gn p-6">
+            <h3 class="text-2xl font-extrabold">Qué es GN</h3>
             <p class="mt-3 leading-relaxed">
-              Un grupo de hermanos mayores dentro del movimiento. Las juntas combinan
-              estudio, oración y convivencia. GN es puente natural hacia Grupo Conciencia,
-              las misiones y el coro.
+              Juntas de domingo, estudio sencillo del Evangelio y liderazgo que se
+              aprende sirviendo. Lema interno: la siguiente generación no se improvisa, se forma.
             </p>
-            <p class="mt-3 leading-relaxed">Lema interno: <em>La siguiente generación no se improvisa: se forma.</em></p>
           </article>
-          <article class="solid-card p-6">
-            <h3 class="font-serif text-2xl font-semibold">Retiros del semestre</h3>
-            <div class="mt-2">
-              <div class="date-row"><strong>Domingos</strong><span>Juntas 18:00–20:30</span></div>
-              <div class="date-row"><strong>17–19 oct</strong><span>Retiro de identidad «Raíz y rumbo»</span></div>
-              <div class="date-row"><strong>21–23 nov</strong><span>Retiro de liderazgo y misión</span></div>
-              <div class="date-row"><strong>9 ene</strong><span>Jornada de propósito 2027</span></div>
-              <div class="date-row"><strong>13–15 feb</strong><span>Retiro de Cuaresma</span></div>
+          <article class="card p-6">
+            <h3 class="text-2xl font-extrabold text-[#3A3A3C]">Fechas del semestre</h3>
+            <div class="mt-2 text-[#6B6B70]">
+              <div class="date-row"><strong class="title-gn">Domingos</strong><span>Juntas 18:00–20:30</span></div>
+              <div class="date-row"><strong class="title-gn">17–19 oct</strong><span>Retiro «Raíz y rumbo»</span></div>
+              <div class="date-row"><strong class="title-gn">21–23 nov</strong><span>Retiro de liderazgo y misión</span></div>
+              <div class="date-row"><strong class="title-gn">9 ene</strong><span>Jornada de propósito 2027</span></div>
+              <div class="date-row"><strong class="title-gn">13–15 feb</strong><span>Retiro de Cuaresma</span></div>
             </div>
           </article>
         </div>
 
-        <h3 class="mt-12 font-serif text-3xl font-semibold">Consejeros</h3>
-        <div class="mt-5 grid gap-5 sm:grid-cols-3">
-          <article class="solid-card overflow-hidden">
-            <div class="portrait bg-[#0A2E56] text-[#D7B15A]">DC</div>
-            <div class="p-4">
-              <h4 class="font-serif text-xl font-semibold">Diego C.</h4>
-              <p class="text-sm">Coordinador general de GN</p>
-            </div>
+        <h3 class="mt-11 text-2xl font-extrabold text-[#3A3A3C]">Consejeros</h3>
+        <div class="mt-5 grid gap-4 sm:grid-cols-3">
+          <article class="card">
+            <div class="portrait gn">DC</div>
+            <div class="p-4"><h4 class="font-extrabold">Diego C.</h4><p class="text-sm text-[#6B6B70]">Coordinador de GN</p></div>
           </article>
-          <article class="solid-card overflow-hidden">
-            <div class="portrait bg-[#0A2E56] text-[#D7B15A]">MV</div>
-            <div class="p-4">
-              <h4 class="font-serif text-xl font-semibold">Mariana V.</h4>
-              <p class="text-sm">Formación y retiros</p>
-            </div>
+          <article class="card">
+            <div class="portrait gn">MV</div>
+            <div class="p-4"><h4 class="font-extrabold">Mariana V.</h4><p class="text-sm text-[#6B6B70]">Formación y retiros</p></div>
           </article>
-          <article class="solid-card overflow-hidden">
-            <div class="portrait bg-[#0A2E56] text-[#D7B15A]">JH</div>
-            <div class="p-4">
-              <h4 class="font-serif text-xl font-semibold">Jorge H.</h4>
-              <p class="text-sm">Pastoral vocacional</p>
-            </div>
+          <article class="card">
+            <div class="portrait gn">JH</div>
+            <div class="p-4"><h4 class="font-extrabold">Jorge H.</h4><p class="text-sm text-[#6B6B70]">Pastoral vocacional</p></div>
           </article>
         </div>
 
-        <h3 class="mt-12 font-serif text-3xl font-semibold">Videos promocionales</h3>
-        <div class="mt-5 grid gap-5 md:grid-cols-2">
+        <h3 class="mt-11 text-2xl font-extrabold text-[#3A3A3C]">Galería y videos</h3>
+        <div class="mt-5 grid gap-4 md:grid-cols-3">
+          <figure class="card">
+            <div class="photo"><span>Junta de domingo</span></div>
+            <figcaption class="p-3 text-sm text-[#6B6B70]">El salón después del café</figcaption>
+          </figure>
           <div>
-            <button class="video-card p-6" type="button" data-video="video-gn-1">
+            <button class="video-card h-full" type="button" data-video="video-gn-1">
               <span class="play" aria-hidden="true">▶</span>
-              <strong class="mt-4 block font-serif text-2xl">Así se vive GN</strong>
-              <span class="mt-1 block text-sm">Una junta, un retiro, una amistad</span>
+              <strong class="mt-3 block text-xl">Así se vive GN</strong>
             </button>
-            <div class="video-frame mt-3 p-6" id="video-gn-1">Video promocional de GN. Añade aquí el identificador de YouTube cuando el material esté aprobado.</div>
+            <div class="video-frame" id="video-gn-1">Video promocional de GN. Añade el enlace cuando esté aprobado.</div>
           </div>
           <div>
-            <button class="video-card p-6" type="button" data-video="video-gn-2">
+            <button class="video-card h-full" type="button" data-video="video-gn-2">
               <span class="play" aria-hidden="true">▶</span>
-              <strong class="mt-4 block font-serif text-2xl">Voces del retiro</strong>
-              <span class="mt-1 block text-sm">Jóvenes de preparatoria cuentan su experiencia</span>
+              <strong class="mt-3 block text-xl">Voces del retiro</strong>
             </button>
-            <div class="video-frame mt-3 p-6" id="video-gn-2">Espacio para testimonios filmados del retiro de identidad.</div>
+            <div class="video-frame" id="video-gn-2">Testimonios filmados del retiro de identidad.</div>
           </div>
         </div>
 
-        <div class="contact-bar">
-          <p class="section-kicker text-[#D7B15A]">Contacto directo · GN</p>
+        <div class="contact-row">
+          <p class="kicker title-gn">Escríbenos</p>
           <div class="mt-4 flex flex-wrap gap-3">
-            <a class="btn-solid btn-wa" data-contact="gn" data-channel="wa" data-topic="Grupo GN" target="_blank" rel="noopener noreferrer">WhatsApp GN</a>
-            <a class="btn-solid btn-ig" data-contact="gn" data-channel="ig" target="_blank" rel="noopener noreferrer">Instagram @gn.cji</a>
+            <a class="btn btn-wa" data-contact="gn" data-channel="wa" data-topic="Grupo GN" target="_blank" rel="noopener noreferrer">WhatsApp GN</a>
+            <a class="btn btn-gn" data-contact="gn" data-channel="ig" target="_blank" rel="noopener noreferrer">Instagram @gn.cji</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ==================================================================
-         3. GRUPO CONCIENCIA — blanco / gris claro, tipografía oscura
-         ================================================================== -->
-    <section class="theme-conciencia band border-t-[8px] border-[#C9A227]" id="conciencia">
-      <div class="mx-auto max-w-6xl px-4 py-14 md:px-6 md:py-20">
-        <p class="section-kicker text-[#5C5C5F]">03 · Formación</p>
-        <h2 class="mt-2 font-serif text-4xl font-semibold text-[#1D1D1F] md:text-5xl">Grupo Conciencia</h2>
-        <div class="ornament my-5 justify-start"><span class="bar"></span><span class="mini-cross"></span><span class="bar"></span></div>
-        <p class="max-w-3xl text-lg leading-relaxed text-[#3A3A3C]">
-          Grupo Conciencia es el corazón adulto-joven del movimiento: universitarios y
-          profesionistas que ya no «pasan» por un grupo, sino que lo sostienen. Aquí se
-          madura la fe, se asume la corresponsabilidad y se cuida la unidad de los seis brazos.
+    <!-- ============================================================
+         3. GRUPO CONCIENCIA — acento gris oscuro sobre blanco
+         ============================================================ -->
+    <section class="band-soft" id="conciencia">
+      <div class="mx-auto max-w-6xl px-4 py-14 md:px-6">
+        <p class="kicker title-cj">Grupo · 03</p>
+        <h2 class="mt-2 text-4xl font-extrabold title-cj">Conciencia</h2>
+        <p class="mt-4 max-w-2xl text-lg leading-relaxed text-[#6B6B70]">
+          El corazón adulto-joven del movimiento. Universitarios y profesionistas
+          que ya no «pasan» por un grupo: lo sostienen. Fe madura, mesa larga y
+          responsabilidad suave.
         </p>
 
-        <div class="mt-10 grid gap-6 lg:grid-cols-2">
-          <article class="solid-card p-6">
-            <h3 class="font-serif text-2xl font-semibold">Esencia del grupo</h3>
-            <p class="mt-3 leading-relaxed text-[#3A3A3C]">
-              Heredero directo de aquella primera comunidad de 1992 en San Francisco de Asís
-              y del nombre que nació en 1994: <strong>Conciencia Joven</strong>. Su tarea es
-              formar laicos comprometidos con la Nueva Evangelización, capaces de cambiar
-              primero la propia vida y después su entorno.
+        <div class="mt-9 grid gap-5 lg:grid-cols-2">
+          <article class="card card-key cj p-6">
+            <h3 class="text-2xl font-extrabold">Esencia</h3>
+            <p class="mt-3 leading-relaxed">
+              Venimos de aquella primera comunidad de 1992 en San Francisco de Asís.
+              El nombre nació en 1994. Seguimos con la misma frase: cambiar primero
+              la propia vida, después el entorno.
             </p>
           </article>
-          <article class="solid-card p-6">
-            <h3 class="font-serif text-2xl font-semibold">Calendario del semestre</h3>
-            <div class="mt-2 text-[#3A3A3C]">
+          <article class="card p-6">
+            <h3 class="text-2xl font-extrabold text-[#3A3A3C]">Fechas</h3>
+            <div class="mt-2 text-[#6B6B70]">
               <div class="date-row"><strong>Jueves</strong><span>Junta 20:00–22:00</span></div>
               <div class="date-row"><strong>3–5 oct</strong><span>Retiro de consejeros</span></div>
               <div class="date-row"><strong>14 nov</strong><span>Asamblea de movimiento</span></div>
               <div class="date-row"><strong>4–6 dic</strong><span>Retiro de Adviento conjunto</span></div>
-              <div class="date-row"><strong>28 ene</strong><span>Planeación anual 2027</span></div>
+              <div class="date-row"><strong>28 ene</strong><span>Planeación 2027</span></div>
             </div>
           </article>
         </div>
 
-        <h3 class="mt-12 font-serif text-3xl font-semibold">Consejeros</h3>
-        <div class="mt-5 grid gap-5 sm:grid-cols-3">
-          <article class="solid-card overflow-hidden">
-            <div class="portrait bg-[#E8E8ED] text-[#1A2530]">EP</div>
-            <div class="p-4">
-              <h4 class="font-serif text-xl font-semibold">Elena P.</h4>
-              <p class="text-sm text-[#3A3A3C]">Coordinación general</p>
-            </div>
+        <h3 class="mt-11 text-2xl font-extrabold text-[#3A3A3C]">Consejeros</h3>
+        <div class="mt-5 grid gap-4 sm:grid-cols-3">
+          <article class="card">
+            <div class="portrait cj">EP</div>
+            <div class="p-4"><h4 class="font-extrabold">Elena P.</h4><p class="text-sm text-[#6B6B70]">Coordinación general</p></div>
           </article>
-          <article class="solid-card overflow-hidden">
-            <div class="portrait bg-[#E8E8ED] text-[#1A2530]">RA</div>
-            <div class="p-4">
-              <h4 class="font-serif text-xl font-semibold">Roberto A.</h4>
-              <p class="text-sm text-[#3A3A3C]">Formación permanente</p>
-            </div>
+          <article class="card">
+            <div class="portrait cj">RA</div>
+            <div class="p-4"><h4 class="font-extrabold">Roberto A.</h4><p class="text-sm text-[#6B6B70]">Formación permanente</p></div>
           </article>
-          <article class="solid-card overflow-hidden">
-            <div class="portrait bg-[#E8E8ED] text-[#1A2530]">CL</div>
-            <div class="p-4">
-              <h4 class="font-serif text-xl font-semibold">Carmen L.</h4>
-              <p class="text-sm text-[#3A3A3C]">Vínculo con la parroquia</p>
-            </div>
+          <article class="card">
+            <div class="portrait cj">CL</div>
+            <div class="p-4"><h4 class="font-extrabold">Carmen L.</h4><p class="text-sm text-[#6B6B70]">Vínculo parroquial</p></div>
           </article>
         </div>
 
-        <h3 class="mt-12 font-serif text-3xl font-semibold">Recursos multimedia</h3>
-        <div class="mt-5 grid gap-5 md:grid-cols-2">
-          <div>
-            <button class="video-card p-6" type="button" data-video="video-cj-1">
-              <span class="play" aria-hidden="true">▶</span>
-              <strong class="mt-4 block font-serif text-2xl">Historia del movimiento</strong>
-              <span class="mt-1 block text-sm">De Valores de San Francisco a CJI</span>
-            </button>
-            <div class="video-frame mt-3 p-6 text-[#F7F3EA]" id="video-cj-1">Recurso multimedia de historia. Ideal para un documental breve del 30.º aniversario.</div>
-          </div>
-          <div>
-            <button class="video-card p-6" type="button" data-video="video-cj-2">
-              <span class="play" aria-hidden="true">▶</span>
-              <strong class="mt-4 block font-serif text-2xl">Catequesis del mes</strong>
-              <span class="mt-1 block text-sm">Material de junta para descargar o ver</span>
-            </button>
-            <div class="video-frame mt-3 p-6 text-[#F7F3EA]" id="video-cj-2">Espacio para la catequesis grabada de cada mes.</div>
-          </div>
-        </div>
-
-        <div class="contact-bar border-[#1D1D1F]">
-          <p class="section-kicker">Contacto directo · Grupo Conciencia</p>
+        <div class="contact-row">
+          <p class="kicker title-cj">Escríbenos</p>
           <div class="mt-4 flex flex-wrap gap-3">
-            <a class="btn-solid btn-wa" data-contact="conciencia" data-channel="wa" data-topic="Grupo Conciencia" target="_blank" rel="noopener noreferrer">WhatsApp Conciencia</a>
-            <a class="btn-solid btn-ig" data-contact="conciencia" data-channel="ig" target="_blank" rel="noopener noreferrer">Instagram @concienciajoven</a>
+            <a class="btn btn-wa" data-contact="conciencia" data-channel="wa" data-topic="Grupo Conciencia" target="_blank" rel="noopener noreferrer">WhatsApp Conciencia</a>
+            <a class="btn btn-cj" data-contact="conciencia" data-channel="ig" target="_blank" rel="noopener noreferrer">Instagram @concienciajoven</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ==================================================================
-         4. MISIONES CJI — verde bosque
-         ================================================================== -->
-    <section class="theme-misiones band border-t-[8px] border-[#C9A227]" id="misiones">
-      <div class="mx-auto max-w-6xl px-4 py-14 md:px-6 md:py-20">
-        <p class="section-kicker text-[#C9A227]">04 · Ministerio</p>
-        <h2 class="mt-2 font-serif text-4xl font-semibold md:text-5xl">Misiones CJI</h2>
-        <div class="ornament ornament-on-dark my-5 justify-start"><span class="bar"></span><span class="mini-cross"></span><span class="bar"></span></div>
-        <p class="max-w-3xl text-lg leading-relaxed">
-          Salir de casa para anunciar a Cristo. Las misiones de Conciencia Joven
-          Internacional combinan evangelización, trabajo comunitario y vida de equipo.
-          Cada salida deja amistad, fe y un pueblo visitado con dignidad.
+    <!-- ============================================================
+         4. MISIONES CJI — acento verde bosque
+         ============================================================ -->
+    <section class="band" id="misiones">
+      <div class="mx-auto max-w-6xl px-4 py-14 md:px-6">
+        <p class="kicker title-mis">Ministerio · 04</p>
+        <h2 class="mt-2 text-4xl font-extrabold title-mis">Misiones CJI</h2>
+        <p class="mt-4 max-w-2xl text-lg leading-relaxed text-[#6B6B70]">
+          Salir de casa para anunciar a Cristo. Evangelización, trabajo sencillo
+          y vida de equipo. Cada pueblo nos devuelve más de lo que llevamos.
         </p>
 
-        <!-- Galería -->
-        <h3 class="mt-12 font-serif text-3xl font-semibold">Galería</h3>
+        <h3 class="mt-11 text-2xl font-extrabold text-[#3A3A3C]">Galería</h3>
         <div class="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          <figure class="solid-card overflow-hidden">
-            <div class="gallery-tile" style="background:#0F2A21"><p>Salida al pueblo</p></div>
-            <figcaption class="p-3 text-sm">Visita a familias · misión de verano</figcaption>
-          </figure>
-          <figure class="solid-card overflow-hidden">
-            <div class="gallery-tile" style="background:#184A38"><p>Catequesis infantil</p></div>
-            <figcaption class="p-3 text-sm">Patio parroquial, taller de la mañana</figcaption>
-          </figure>
-          <figure class="solid-card overflow-hidden">
-            <div class="gallery-tile" style="background:#0F2A21"><p>Misa de envío</p></div>
-            <figcaption class="p-3 text-sm">Antes de partir, en Reina de los Ángeles</figcaption>
-          </figure>
-          <figure class="solid-card overflow-hidden">
-            <div class="gallery-tile" style="background:#184A38"><p>Equipo misionero</p></div>
-            <figcaption class="p-3 text-sm">Foto oficial del equipo 2026</figcaption>
-          </figure>
+          <figure class="card"><div class="photo"><span>Salida al pueblo</span></div><figcaption class="p-3 text-sm text-[#6B6B70]">Visita a familias</figcaption></figure>
+          <figure class="card"><div class="photo"><span>Catequesis</span></div><figcaption class="p-3 text-sm text-[#6B6B70]">Patio parroquial</figcaption></figure>
+          <figure class="card"><div class="photo"><span>Misa de envío</span></div><figcaption class="p-3 text-sm text-[#6B6B70]">Reina de los Ángeles</figcaption></figure>
+          <figure class="card"><div class="photo"><span>El equipo</span></div><figcaption class="p-3 text-sm text-[#6B6B70]">Misioneros 2026</figcaption></figure>
         </div>
 
-        <!-- Destinos -->
-        <h3 class="mt-12 font-serif text-3xl font-semibold">Próximos destinos</h3>
-        <div class="mt-5 grid gap-5 md:grid-cols-3">
-          <article class="solid-card p-5">
-            <p class="section-kicker text-[#C9A227]">Dic 2026</p>
-            <h4 class="mt-2 font-serif text-2xl font-semibold">Sierra de Arteaga</h4>
-            <p class="mt-2 text-sm leading-relaxed">Misión de Adviento · 5 días · cupo 28 misioneros.</p>
+        <h3 class="mt-11 text-2xl font-extrabold text-[#3A3A3C]">Próximos destinos</h3>
+        <div class="mt-5 grid gap-4 md:grid-cols-3">
+          <article class="card p-5">
+            <p class="kicker title-mis">Dic 2026</p>
+            <h4 class="mt-2 text-xl font-extrabold">Sierra de Arteaga</h4>
+            <p class="mt-2 text-sm text-[#6B6B70]">Adviento · 5 días · cupo 28</p>
           </article>
-          <article class="solid-card p-5">
-            <p class="section-kicker text-[#C9A227]">Semana Santa 2027</p>
-            <h4 class="mt-2 font-serif text-2xl font-semibold">Galeana, N.L.</h4>
-            <p class="mt-2 text-sm leading-relaxed">Semana completa con parroquia anfitriona y ranchos.</p>
+          <article class="card card-key mis p-5">
+            <p class="kicker">Semana Santa 2027</p>
+            <h4 class="mt-2 text-xl font-extrabold">Galeana, N.L.</h4>
+            <p class="mt-2 text-sm">Semana completa con ranchos</p>
           </article>
-          <article class="solid-card p-5">
-            <p class="section-kicker text-[#C9A227]">Verano 2027</p>
-            <h4 class="mt-2 font-serif text-2xl font-semibold">Doctor Arroyo</h4>
-            <p class="mt-2 text-sm leading-relaxed">Misión larga de dos semanas. Se abre convocatoria en marzo.</p>
+          <article class="card p-5">
+            <p class="kicker title-mis">Verano 2027</p>
+            <h4 class="mt-2 text-xl font-extrabold">Doctor Arroyo</h4>
+            <p class="mt-2 text-sm text-[#6B6B70]">Dos semanas. Convocatoria en marzo.</p>
           </article>
         </div>
 
-        <!-- Formulario visual (sin backend: abre WhatsApp) -->
-        <h3 class="mt-12 font-serif text-3xl font-semibold">Inscripción a misiones</h3>
-        <form class="solid-card mt-5 grid gap-4 p-6 md:grid-cols-2" id="form-misiones" novalidate>
+        <h3 class="mt-11 text-2xl font-extrabold text-[#3A3A3C]">Inscripción</h3>
+        <form class="card mt-5 grid gap-4 p-6 md:grid-cols-2" id="form-misiones">
+          <label class="field"><span>Nombre completo</span><input type="text" name="nombre" required autocomplete="name" /></label>
+          <label class="field"><span>Edad</span><input type="number" name="edad" min="15" max="45" required /></label>
+          <label class="field"><span>Teléfono</span><input type="tel" name="telefono" required autocomplete="tel" /></label>
+          <label class="field"><span>Correo</span><input type="email" name="correo" required autocomplete="email" /></label>
+          <label class="field"><span>Parroquia o grupo</span><input type="text" name="parroquia" /></label>
           <label class="field">
-            <span>Nombre completo</span>
-            <input type="text" name="nombre" required autocomplete="name" />
-          </label>
-          <label class="field">
-            <span>Edad</span>
-            <input type="number" name="edad" min="15" max="45" required />
-          </label>
-          <label class="field">
-            <span>Teléfono</span>
-            <input type="tel" name="telefono" required autocomplete="tel" />
-          </label>
-          <label class="field">
-            <span>Correo</span>
-            <input type="email" name="correo" required autocomplete="email" />
-          </label>
-          <label class="field">
-            <span>Parroquia o grupo de origen</span>
-            <input type="text" name="parroquia" />
-          </label>
-          <label class="field">
-            <span>Destino de interés</span>
+            <span>Destino</span>
             <select name="destino">
               <option value="Sierra de Arteaga">Sierra de Arteaga · Dic 2026</option>
               <option value="Galeana">Galeana · Semana Santa 2027</option>
               <option value="Doctor Arroyo">Doctor Arroyo · Verano 2027</option>
             </select>
           </label>
-          <label class="field md:col-span-2">
-            <span>Comentarios</span>
-            <textarea name="comentarios" rows="4" placeholder="Disponibilidad, experiencia previa, dudas."></textarea>
-          </label>
+          <label class="field md:col-span-2"><span>Comentarios</span><textarea name="comentarios" rows="4" placeholder="Disponibilidad, experiencia, dudas."></textarea></label>
           <div class="md:col-span-2 flex flex-wrap items-center gap-3">
-            <button class="btn-solid btn-gold" type="submit">Enviar ficha por WhatsApp</button>
-            <p class="text-sm">El formulario no guarda datos en un servidor: abre una conversación con Misiones CJI.</p>
+            <button class="btn btn-mis" type="submit">Enviar ficha por WhatsApp</button>
+            <p class="text-sm text-[#6B6B70]">No se guarda en un servidor: abre chat con el equipo de misiones.</p>
           </div>
-          <p class="form-ok md:col-span-2" id="form-ok" tabindex="-1">Ficha lista. Se abrió WhatsApp con tu información para que el equipo de misiones la reciba.</p>
+          <p class="form-ok md:col-span-2" id="form-ok" tabindex="-1">Listo. Se abrió WhatsApp con tu ficha.</p>
         </form>
 
-        <!-- Video -->
-        <h3 class="mt-12 font-serif text-3xl font-semibold">Video de misiones</h3>
-        <button class="video-card mt-5 max-w-3xl p-8" type="button" data-video="video-misiones">
+        <h3 class="mt-11 text-2xl font-extrabold text-[#3A3A3C]">Video de misiones</h3>
+        <button class="video-card mt-5 max-w-2xl" type="button" data-video="video-misiones">
           <span class="play" aria-hidden="true">▶</span>
-          <strong class="mt-4 block font-serif text-3xl">Llamados a salir</strong>
-          <span class="mt-1 block">Documental breve de la misión anterior</span>
+          <strong class="mt-3 block text-2xl">Llamados a salir</strong>
+          <span class="mt-1 block text-sm text-[#6B6B70]">Recuerdo de la misión anterior</span>
         </button>
-        <div class="video-frame mt-3 max-w-3xl p-6" id="video-misiones">Cuando el documental esté publicado, este recuadro cargará el video oficial de Misiones CJI.</div>
+        <div class="video-frame max-w-2xl" id="video-misiones">Cuando el documental esté publicado, aparecerá aquí.</div>
 
-        <!-- FAQ -->
-        <h3 class="mt-12 font-serif text-3xl font-semibold">Preguntas frecuentes</h3>
-        <div class="solid-card mt-5 px-5">
+        <h3 class="mt-11 text-2xl font-extrabold text-[#3A3A3C]">Preguntas frecuentes</h3>
+        <div class="card mt-5 px-5">
           <div class="faq-item is-open">
-            <button class="faq-btn" type="button" aria-expanded="true">¿Quién puede misionar?</button>
-            <div class="faq-panel">Jóvenes a partir de 15 años, con autorización de padres si son menores, y un mínimo de permanencia en alguno de los grupos de CJI o carta del párroco.</div>
+            <button class="faq-btn" type="button" aria-expanded="true">¿Quién puede misionar?<span>+</span></button>
+            <div class="faq-panel">Desde los 15 años, con permiso de papás si eres menor, y un tiempo mínimo en alguno de los grupos o carta del párroco.</div>
           </div>
           <div class="faq-item">
-            <button class="faq-btn" type="button" aria-expanded="false">¿Hay cuota?</button>
-            <div class="faq-panel">Sí. Cubre transporte, alimentación sencilla y materiales de catequesis. Nadie se queda fuera por motivo económico: hay buzón de becas a través de Apostolados.</div>
+            <button class="faq-btn" type="button" aria-expanded="false">¿Hay cuota?<span>+</span></button>
+            <div class="faq-panel">Sí: transporte, comida sencilla y materiales. Si se complica, hay becas a través del Buzón de Apostolados. Nadie se queda fuera por eso.</div>
           </div>
           <div class="faq-item">
-            <button class="faq-btn" type="button" aria-expanded="false">¿Debo pertenecer a NOVA, GN o Conciencia?</button>
-            <div class="faq-panel">Es lo ideal, porque la misión nace de la vida de grupo. También recibimos a jóvenes de parroquias amigas con recomendación.</div>
+            <button class="faq-btn" type="button" aria-expanded="false">¿Tengo que ser de NOVA, GN o Conciencia?<span>+</span></button>
+            <div class="faq-panel">Es lo más natural, porque la misión nace de la vida de grupo. También recibimos a jóvenes de parroquias amigas con recomendación.</div>
           </div>
           <div class="faq-item">
-            <button class="faq-btn" type="button" aria-expanded="false">¿Qué debo llevar?</button>
-            <div class="faq-panel">Mochila ligera, ropa modesta, Biblia, rosario, botas o tenis cerrados, lámpara y disposición de horario completo. La lista detallada se entrega al confirmar la ficha.</div>
+            <button class="faq-btn" type="button" aria-expanded="false">¿Qué llevo?<span>+</span></button>
+            <div class="faq-panel">Mochila ligera, ropa sencilla, Biblia, rosario, tenis cerrados y ganas de horario completo. La lista fina llega al confirmar tu ficha.</div>
           </div>
         </div>
 
-        <!-- Testimonios -->
-        <h3 class="mt-12 font-serif text-3xl font-semibold">Testimonios</h3>
-        <div class="mt-5 grid gap-5 md:grid-cols-3">
-          <blockquote class="solid-card p-5">
-            <p>«En Galeana entendí que evangelizar es sentarse a la mesa, no solo hablar.»</p>
-            <footer class="mt-3 text-sm font-bold">— Fernanda, GN</footer>
-          </blockquote>
-          <blockquote class="solid-card p-5">
-            <p>«Volví más pobre de cosas y más rico de hermanos. Repetiré cada Semana Santa.»</p>
-            <footer class="mt-3 text-sm font-bold">— Pablo, Grupo Conciencia</footer>
-          </blockquote>
-          <blockquote class="solid-card p-5">
-            <p>«Mi primera misión fue de miedo. La segunda, de vocación.»</p>
-            <footer class="mt-3 text-sm font-bold">— Regina, NOVA</footer>
-          </blockquote>
+        <h3 class="mt-11 text-2xl font-extrabold text-[#3A3A3C]">Testimonios</h3>
+        <div class="mt-5 grid gap-4 md:grid-cols-3">
+          <blockquote class="card p-5"><p>«En Galeana entendí que evangelizar es sentarse a la mesa.»</p><footer class="mt-3 text-sm font-extrabold title-mis">Fernanda, GN</footer></blockquote>
+          <blockquote class="card p-5"><p>«Volví con menos cosas y más hermanos.»</p><footer class="mt-3 text-sm font-extrabold title-mis">Pablo, Conciencia</footer></blockquote>
+          <blockquote class="card p-5"><p>«La primera misión fue de miedo. La segunda, de vocación.»</p><footer class="mt-3 text-sm font-extrabold title-mis">Regina, NOVA</footer></blockquote>
         </div>
 
-        <div class="contact-bar">
-          <p class="section-kicker text-[#C9A227]">Contacto directo · Misiones CJI</p>
+        <div class="contact-row">
+          <p class="kicker title-mis">Escríbenos</p>
           <div class="mt-4 flex flex-wrap gap-3">
-            <a class="btn-solid btn-wa" data-contact="misiones" data-channel="wa" data-topic="Misiones CJI" target="_blank" rel="noopener noreferrer">WhatsApp Misiones</a>
-            <a class="btn-solid btn-ig" data-contact="misiones" data-channel="ig" target="_blank" rel="noopener noreferrer">Instagram @misiones.cji</a>
+            <a class="btn btn-wa" data-contact="misiones" data-channel="wa" data-topic="Misiones CJI" target="_blank" rel="noopener noreferrer">WhatsApp Misiones</a>
+            <a class="btn btn-mis" data-contact="misiones" data-channel="ig" target="_blank" rel="noopener noreferrer">Instagram @misiones.cji</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ==================================================================
-         5. APOSTOLADOS — oxford / azul marino profundo
-         ================================================================== -->
-    <section class="theme-apostolados band border-t-[8px] border-[#C9A227]" id="apostolados">
-      <div class="mx-auto max-w-6xl px-4 py-14 md:px-6 md:py-20">
-        <p class="section-kicker text-[#C9A227]">05 · Ministerio</p>
-        <h2 class="mt-2 font-serif text-4xl font-semibold md:text-5xl">Apostolados</h2>
-        <div class="ornament ornament-on-dark my-5 justify-start"><span class="bar"></span><span class="mini-cross"></span><span class="bar"></span></div>
-        <p class="max-w-3xl text-lg leading-relaxed">
-          El apostolado es el origen mismo del movimiento. Antes del nombre, ya había
-          jóvenes sirviendo en Cáritas, en la misa de las cinco y en obras concretas.
-          Hoy el área concentra proyectos sociales, visita a instituciones y el buzón
-          de donaciones que sostiene misiones y familias en necesidad.
+    <!-- ============================================================
+         5. APOSTOLADOS — acento oxford
+         ============================================================ -->
+    <section class="band-soft" id="apostolados">
+      <div class="mx-auto max-w-6xl px-4 py-14 md:px-6">
+        <p class="kicker title-apo">Ministerio · 05</p>
+        <h2 class="mt-2 text-4xl font-extrabold title-apo">Apostolados</h2>
+        <p class="mt-4 max-w-2xl text-lg leading-relaxed text-[#6B6B70]">
+          Antes del nombre ya había jóvenes sirviendo. Hoy este brazo cuida
+          proyectos sociales, visitas y el buzón que sostiene despensas, retiros
+          y misiones.
         </p>
 
-        <h3 class="mt-12 font-serif text-3xl font-semibold">Historial y proyectos</h3>
-        <div class="mt-5 grid gap-5 lg:grid-cols-2">
-          <article class="solid-card p-6">
-            <h4 class="font-serif text-2xl font-semibold">Línea de tiempo</h4>
-            <div class="mt-3">
-              <div class="date-row"><strong>1992</strong><span>Valores de San Francisco · primeros apostolados parroquiales</span></div>
-              <div class="date-row"><strong>1994</strong><span>Nace Conciencia Joven; cassette benéfico a favor de «Paña»</span></div>
-              <div class="date-row"><strong>2000s</strong><span>Alianza estable con Cáritas de Monterrey y asilos</span></div>
-              <div class="date-row"><strong>2010s</strong><span>Brigadas de despensa, tutoría escolar y visitas hospitalarias</span></div>
-              <div class="date-row"><strong>2026</strong><span>Buzón de donaciones unificado y calendario mensual de servicio</span></div>
+        <div class="mt-9 grid gap-5 lg:grid-cols-2">
+          <article class="card p-6">
+            <h3 class="text-2xl font-extrabold text-[#3A3A3C]">Historial</h3>
+            <div class="mt-3 text-[#6B6B70]">
+              <div class="date-row"><strong class="title-apo">1992</strong><span>Primeros apostolados en San Francisco de Asís</span></div>
+              <div class="date-row"><strong class="title-apo">1994</strong><span>Nace Conciencia Joven · cassette a favor de Paña</span></div>
+              <div class="date-row"><strong class="title-apo">2000s</strong><span>Cáritas Monterrey y casas de descanso</span></div>
+              <div class="date-row"><strong class="title-apo">2010s</strong><span>Despensa, tutoría y hospitales</span></div>
+              <div class="date-row"><strong class="title-apo">2026</strong><span>Buzón unificado y calendario mensual</span></div>
             </div>
           </article>
-          <article class="solid-card p-6">
-            <h4 class="font-serif text-2xl font-semibold">Proyectos activos</h4>
-            <ul class="mt-3 space-y-2 leading-relaxed">
-              <li>Despensa mensual a familias acompañadas por la parroquia.</li>
-              <li>Visita a casa de descanso y hospitales infantiles.</li>
-              <li>Apoyo escolar los sábados por la mañana.</li>
-              <li>Colecta de cobijas y útiles en noviembre y agosto.</li>
+          <article class="card card-key apo p-6">
+            <h3 class="text-2xl font-extrabold">Proyectos de ahora</h3>
+            <ul class="mt-4 space-y-2 leading-relaxed">
+              <li>Despensa mensual a familias de la parroquia.</li>
+              <li>Visita a casa de descanso y hospital infantil.</li>
+              <li>Tutoría escolar los sábados.</li>
+              <li>Colecta de cobijas y útiles.</li>
               <li>Becas internas para retiros y misiones.</li>
             </ul>
           </article>
         </div>
 
-        <h3 class="mt-12 font-serif text-3xl font-semibold">Fotos y videos</h3>
+        <h3 class="mt-11 text-2xl font-extrabold text-[#3A3A3C]">Fotos</h3>
         <div class="mt-5 grid gap-4 md:grid-cols-3">
-          <figure class="solid-card overflow-hidden">
-            <div class="gallery-tile" style="background:#1A2530"><p>Colecta de invierno</p></div>
-            <figcaption class="p-3 text-sm">Entrega de cobijas · noviembre</figcaption>
-          </figure>
-          <figure class="solid-card overflow-hidden">
-            <div class="gallery-tile" style="background:#243140"><p>Sábado de tutoría</p></div>
-            <figcaption class="p-3 text-sm">Aula parroquial</figcaption>
-          </figure>
-          <div>
-            <button class="video-card h-full min-h-[11rem] p-6" type="button" data-video="video-apo">
-              <span class="play" aria-hidden="true">▶</span>
-              <strong class="mt-4 block font-serif text-2xl">Memoria del año</strong>
-            </button>
-            <div class="video-frame mt-3 p-6" id="video-apo">Video institucional de Apostolados. Sustituir por el recuento anual cuando esté editado.</div>
-          </div>
+          <figure class="card"><div class="photo"><span>Colecta de invierno</span></div><figcaption class="p-3 text-sm text-[#6B6B70]">Entrega de cobijas</figcaption></figure>
+          <figure class="card"><div class="photo"><span>Sábado de tutoría</span></div><figcaption class="p-3 text-sm text-[#6B6B70]">Aula parroquial</figcaption></figure>
+          <figure class="card"><div class="photo"><span>Visita</span></div><figcaption class="p-3 text-sm text-[#6B6B70]">Casa de descanso</figcaption></figure>
         </div>
 
-        <h3 class="mt-12 font-serif text-3xl font-semibold">Testimonios</h3>
-        <div class="mt-5 grid gap-5 md:grid-cols-2">
-          <blockquote class="solid-card p-5">
-            <p>«No fuimos a «ayudar». Fuimos a recibir el Evangelio en la voz de quienes visitamos.»</p>
-            <footer class="mt-3 text-sm font-bold">— Equipo de visita 2025</footer>
-          </blockquote>
-          <blockquote class="solid-card p-5">
-            <p>«El buzón no es limosna anónima: es un lazo entre quien da y quien sirve.»</p>
-            <footer class="mt-3 text-sm font-bold">— Familia benefactora</footer>
-          </blockquote>
+        <h3 class="mt-11 text-2xl font-extrabold text-[#3A3A3C]">Testimonios</h3>
+        <div class="mt-5 grid gap-4 md:grid-cols-2">
+          <blockquote class="card p-5"><p>«No fuimos a ayudar. Fuimos a recibir el Evangelio en otra voz.»</p><footer class="mt-3 text-sm font-extrabold title-apo">Equipo de visita</footer></blockquote>
+          <blockquote class="card p-5"><p>«El buzón no es limosna anónima: es un lazo.»</p><footer class="mt-3 text-sm font-extrabold title-apo">Una familia benefactora</footer></blockquote>
         </div>
 
-        <!-- Buzón de donaciones (estático, CTA claros) -->
-        <h3 class="mt-12 font-serif text-3xl font-semibold">Buzón de donaciones</h3>
-        <div class="donate-box mt-5 grid gap-6 p-6 md:grid-cols-2">
+        <h3 class="mt-11 text-2xl font-extrabold text-[#3A3A3C]">Buzón de donaciones</h3>
+        <div class="donate mt-5 grid gap-6 p-6 md:grid-cols-2">
           <div>
-            <p class="section-kicker text-[#E8C547]">Cómo apoyar</p>
-            <p class="mt-3 leading-relaxed">
-              Las donaciones sostienen despensas, materiales de apostolado, becas de retiro
-              y el fondo de misiones. Todo se reporta en asamblea. No hay cobros en línea
-              automáticos: eliges el canal y el equipo te confirma el acuse.
+            <p class="leading-relaxed text-[#6B6B70]">
+              Tu ofrenda sostiene despensas, materiales, becas de retiro y el fondo
+              de misiones. Se reporta en asamblea. No hay cobro automático en la web:
+              eliges el canal y te confirmamos.
             </p>
-            <ul class="mt-4 space-y-2">
+            <ul class="mt-4 space-y-2 text-[#3A3A3C]">
               <li><strong>Buzón físico:</strong> parroquia Nuestra Señora Reina de los Ángeles, después de la misa joven.</li>
-              <li><strong>Transferencia:</strong> Conciencia Joven Internacional A.C. · CLABE a solicitar por WhatsApp.</li>
-              <li><strong>En especie:</strong> despensa no perecedera, cobijas, útiles, medicamentos de patente cerrados.</li>
+              <li><strong>Transferencia:</strong> Conciencia Joven Internacional A.C. · CLABE por WhatsApp.</li>
+              <li><strong>En especie:</strong> despensa, cobijas, útiles, medicamentos cerrados.</li>
             </ul>
           </div>
           <div class="flex flex-col justify-center gap-3">
-            <a class="btn-solid btn-gold" data-contact="apostolados" data-channel="wa" data-topic="Donación al buzón de Apostolados" target="_blank" rel="noopener noreferrer">Quiero donar · WhatsApp</a>
-            <a class="btn-solid btn-light" data-contact="apostolados" data-channel="ig" target="_blank" rel="noopener noreferrer">Ver campañas en Instagram</a>
-            <p class="text-sm text-[#D8D0C0]">Indica si tu ofrenda es económica, en especie o como voluntariado de sábado.</p>
+            <a class="btn btn-apo" data-contact="apostolados" data-channel="wa" data-topic="Donación al buzón de Apostolados" target="_blank" rel="noopener noreferrer">Quiero donar · WhatsApp</a>
+            <a class="btn btn-ghost" data-contact="apostolados" data-channel="ig" target="_blank" rel="noopener noreferrer">Ver campañas en Instagram</a>
           </div>
         </div>
 
-        <div class="contact-bar">
-          <p class="section-kicker text-[#C9A227]">Contacto directo · Apostolados</p>
+        <div class="contact-row">
+          <p class="kicker title-apo">Escríbenos</p>
           <div class="mt-4 flex flex-wrap gap-3">
-            <a class="btn-solid btn-wa" data-contact="apostolados" data-channel="wa" data-topic="Apostolados CJI" target="_blank" rel="noopener noreferrer">WhatsApp Apostolados</a>
-            <a class="btn-solid btn-ig" data-contact="apostolados" data-channel="ig" target="_blank" rel="noopener noreferrer">Instagram @apostolados.cji</a>
+            <a class="btn btn-wa" data-contact="apostolados" data-channel="wa" data-topic="Apostolados CJI" target="_blank" rel="noopener noreferrer">WhatsApp Apostolados</a>
+            <a class="btn btn-apo" data-contact="apostolados" data-channel="ig" target="_blank" rel="noopener noreferrer">Instagram @apostolados.cji</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ==================================================================
-         6. COROCJI — rosa viejo
-         ================================================================== -->
-    <section class="theme-corocji band border-t-[8px] border-[#C9A227]" id="corocji">
-      <div class="mx-auto max-w-6xl px-4 py-14 md:px-6 md:py-20">
-        <p class="section-kicker text-[#E8C9B0]">06 · Ministerio</p>
-        <h2 class="mt-2 font-serif text-4xl font-semibold md:text-5xl">COROCJI</h2>
-        <div class="ornament ornament-on-dark my-5 justify-start"><span class="bar"></span><span class="mini-cross"></span><span class="bar"></span></div>
-        <p class="max-w-3xl text-lg leading-relaxed">
-          COROCJI es el ministerio de alabanza y adoración del movimiento. Nació con
-          aquellos jóvenes que grabaron un cassette para ayudar a un hermano y, al mismo
-          tiempo, cantaron la fe de una generación. Hoy anima Horas Santas, misas jóvenes
-          y encuentros de alabanza.
+    <!-- ============================================================
+         6. COROCJI — acento rosa viejo
+         ============================================================ -->
+    <section class="band" id="corocji">
+      <div class="mx-auto max-w-6xl px-4 py-14 md:px-6">
+        <p class="kicker title-coro">Ministerio · 06</p>
+        <h2 class="mt-2 text-4xl font-extrabold title-coro">COROCJI</h2>
+        <p class="mt-4 max-w-2xl text-lg leading-relaxed text-[#6B6B70]">
+          El ministerio de alabanza. Nació con aquellos jóvenes que grabaron un
+          cassette para ayudar a un hermano. Hoy anima Horas Santas, misas jóvenes
+          y encuentros de canto.
         </p>
 
-        <h3 class="mt-12 font-serif text-3xl font-semibold">Horas Santas</h3>
+        <h3 class="mt-11 text-2xl font-extrabold text-[#3A3A3C]">Horas Santas</h3>
         <div class="mt-5 overflow-x-auto">
-          <table class="schedule-table min-w-[32rem]">
+          <table class="schedule min-w-[32rem]">
             <thead>
-              <tr>
-                <th>Día</th>
-                <th>Horario</th>
-                <th>Lugar</th>
-                <th>Notas</th>
-              </tr>
+              <tr><th>Día</th><th>Horario</th><th>Lugar</th><th>Notas</th></tr>
             </thead>
             <tbody>
-              <tr>
-                <td>Jueves</td>
-                <td>20:00–21:00</td>
-                <td>Capilla parroquial</td>
-                <td>Hora Santa semanal con COROCJI</td>
-              </tr>
-              <tr>
-                <td>Primer viernes</td>
-                <td>19:30–21:00</td>
-                <td>Templo principal</td>
-                <td>Adoración y alabanza extendida</td>
-              </tr>
-              <tr>
-                <td>Víspera de retiro</td>
-                <td>21:00</td>
-                <td>Sede del retiro</td>
-                <td>Vigilia de envío</td>
-              </tr>
-              <tr>
-                <td>Domingo</td>
-                <td>Misa joven</td>
-                <td>Reina de los Ángeles</td>
-                <td>Según calendario parroquial</td>
-              </tr>
+              <tr><td>Jueves</td><td>20:00–21:00</td><td>Capilla parroquial</td><td>Hora Santa semanal</td></tr>
+              <tr><td>Primer viernes</td><td>19:30–21:00</td><td>Templo principal</td><td>Adoración extendida</td></tr>
+              <tr><td>Víspera de retiro</td><td>21:00</td><td>Sede del retiro</td><td>Vigilia de envío</td></tr>
+              <tr><td>Domingo</td><td>Misa joven</td><td>Reina de los Ángeles</td><td>Según calendario parroquial</td></tr>
             </tbody>
           </table>
         </div>
 
-        <div class="mt-8 grid gap-6 lg:grid-cols-2">
-          <article class="solid-card p-6">
-            <h3 class="font-serif text-2xl font-semibold">El ministerio</h3>
+        <div class="mt-8 grid gap-5 lg:grid-cols-2">
+          <article class="card card-key coro p-6">
+            <h3 class="text-2xl font-extrabold">El ministerio</h3>
             <p class="mt-3 leading-relaxed">
-              Ensayos los martes. Se reciben voces, guitarra, teclado, cajón y ministerio
-              de proyección. No se exige experiencia profesional: sí constancia, oído
-              orante y vida de grupo. COROCJI no es un escenario; es un servicio al altar.
+              Ensayos los martes. Voces, guitarra, teclado, cajón y proyección.
+              No hace falta ser profesional: sí constancia y vida de grupo.
+              COROCJI no es un escenario; es un servicio al altar.
             </p>
           </article>
-          <article class="solid-card p-6">
-            <h3 class="font-serif text-2xl font-semibold">Redes y música</h3>
-            <p class="mt-3 leading-relaxed">Escucha al coro y sigue los avisos de Horas Santas:</p>
+          <article class="card p-6">
+            <h3 class="text-2xl font-extrabold text-[#3A3A3C]">Redes y música</h3>
+            <p class="mt-3 text-[#6B6B70]">Escucha al coro y entérate de las Horas Santas.</p>
             <div class="mt-4 flex flex-wrap gap-3">
-              <a class="btn-solid btn-light" href="https://open.spotify.com/artist/5riM4IR7EOtbMi9lq7aZuL" target="_blank" rel="noopener noreferrer">Spotify · Coro CJI</a>
-              <a class="btn-solid btn-ig" data-contact="corocji" data-channel="ig" target="_blank" rel="noopener noreferrer">Instagram @corocji</a>
+              <a class="btn btn-ghost" href="https://open.spotify.com/artist/5riM4IR7EOtbMi9lq7aZuL" target="_blank" rel="noopener noreferrer">Spotify · Coro CJI</a>
+              <a class="btn btn-coro" data-contact="corocji" data-channel="ig" target="_blank" rel="noopener noreferrer">Instagram @corocji</a>
             </div>
           </article>
         </div>
 
-        <h3 class="mt-12 font-serif text-3xl font-semibold">Videos de alabanzas</h3>
-        <div class="mt-5 grid gap-5 md:grid-cols-2">
+        <h3 class="mt-11 text-2xl font-extrabold text-[#3A3A3C]">Videos de alabanzas</h3>
+        <div class="mt-5 grid gap-4 md:grid-cols-2">
           <div>
-            <button class="video-card p-6" type="button" data-video="video-coro-1">
+            <button class="video-card" type="button" data-video="video-coro-1">
               <span class="play" aria-hidden="true">▶</span>
-              <strong class="mt-4 block font-serif text-2xl">Alabanza de Hora Santa</strong>
-              <span class="mt-1 block text-sm">Registro del primer viernes</span>
+              <strong class="mt-3 block text-xl">Alabanza de Hora Santa</strong>
+              <span class="mt-1 block text-sm text-[#6B6B70]">Primer viernes</span>
             </button>
-            <div class="video-frame mt-3 p-6" id="video-coro-1">Video de alabanza. Coloca aquí el enlace de YouTube o de la grabación parroquial.</div>
+            <div class="video-frame" id="video-coro-1">Espacio para la grabación de alabanza.</div>
           </div>
           <div>
-            <button class="video-card p-6" type="button" data-video="video-coro-2">
+            <button class="video-card" type="button" data-video="video-coro-2">
               <span class="play" aria-hidden="true">▶</span>
-              <strong class="mt-4 block font-serif text-2xl">Ensayo abierto</strong>
-              <span class="mt-1 block text-sm">Cómo suena el coro en casa</span>
+              <strong class="mt-3 block text-xl">Ensayo abierto</strong>
+              <span class="mt-1 block text-sm text-[#6B6B70]">Para quien quiere unirse</span>
             </button>
-            <div class="video-frame mt-3 p-6" id="video-coro-2">Espacio para un ensayo grabado, útil para quienes quieren unirse al ministerio.</div>
+            <div class="video-frame" id="video-coro-2">Espacio para un ensayo grabado.</div>
           </div>
         </div>
 
-        <div class="contact-bar">
-          <p class="section-kicker text-[#E8C9B0]">Contacto directo · COROCJI</p>
+        <div class="contact-row">
+          <p class="kicker title-coro">Escríbenos</p>
           <div class="mt-4 flex flex-wrap gap-3">
-            <a class="btn-solid btn-wa" data-contact="corocji" data-channel="wa" data-topic="COROCJI" target="_blank" rel="noopener noreferrer">WhatsApp COROCJI</a>
-            <a class="btn-solid btn-ig" data-contact="corocji" data-channel="ig" target="_blank" rel="noopener noreferrer">Instagram @corocji</a>
+            <a class="btn btn-wa" data-contact="corocji" data-channel="wa" data-topic="COROCJI" target="_blank" rel="noopener noreferrer">WhatsApp COROCJI</a>
+            <a class="btn btn-coro" data-contact="corocji" data-channel="ig" target="_blank" rel="noopener noreferrer">Instagram @corocji</a>
           </div>
         </div>
       </div>
@@ -803,32 +618,32 @@
   <footer class="site-footer">
     <div class="mx-auto grid max-w-6xl gap-8 px-4 py-12 md:grid-cols-3 md:px-6">
       <div>
-        <div class="flex items-center gap-3">
-          <img src="assets/cruz.svg" alt="" width="36" height="36" />
-          <strong class="font-serif text-2xl font-semibold">Conciencia Joven</strong>
+        <div class="flex items-center gap-2">
+          <img src="assets/cruz.svg" alt="" width="32" height="32" />
+          <strong class="text-lg font-extrabold text-[#3A3A3C]">Conciencia Joven</strong>
         </div>
-        <p class="mt-4 max-w-sm leading-relaxed">
-          Asociación civil de jóvenes católicos. San Pedro y Monterrey, Nuevo León.
-          Lema: <em>Atrévete a manejar tu libertad.</em>
+        <p class="mt-3 max-w-sm leading-relaxed">
+          Jóvenes católicos de San Pedro y Monterrey. Lema:
+          <em>Atrévete a manejar tu libertad.</em>
         </p>
       </div>
       <div>
-        <p class="section-kicker text-[#E8C547]">Sede</p>
+        <p class="kicker">Sede</p>
         <p class="mt-3 leading-relaxed">
           Parroquia Nuestra Señora Reina de los Ángeles<br />
           Área metropolitana de Monterrey<br />
-          Orígenes: Iglesia San Francisco de Asís, San Pedro, N.L.
+          Orígenes: San Francisco de Asís, San Pedro, N.L.
         </p>
       </div>
       <div>
-        <p class="section-kicker text-[#E8C547]">Escribe al movimiento</p>
+        <p class="kicker">Platicamos</p>
         <div class="mt-4 flex flex-col items-start gap-3">
-          <a class="btn-solid btn-wa" data-contact="general" data-channel="wa" data-topic="Conciencia Joven" target="_blank" rel="noopener noreferrer">WhatsApp general</a>
-          <a class="btn-solid btn-ig" data-contact="general" data-channel="ig" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a class="btn btn-wa" data-contact="general" data-channel="wa" data-topic="Conciencia Joven" target="_blank" rel="noopener noreferrer">WhatsApp general</a>
+          <a class="btn btn-ghost" data-contact="general" data-channel="ig" target="_blank" rel="noopener noreferrer">Instagram</a>
         </div>
       </div>
     </div>
-    <div class="border-t-2 border-[#C4A35A] px-4 py-4 text-center text-sm md:px-6">
+    <div class="border-t border-[#E4E4E7] px-4 py-4 text-center text-sm md:px-6">
       © <span id="year">2026</span> Conciencia Joven Internacional A.C. · concienciajoven.com
     </div>
   </footer>
