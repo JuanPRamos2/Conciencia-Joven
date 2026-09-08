@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Cruz de Conciencia Joven: cruz latina, círculo de conciencia y seis marcas de los grupos. -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="cruzTitle cruzDesc">
-  <title id="cruzTitle">Cruz de Conciencia Joven</title>
-  <desc id="cruzDesc">Cruz latina dorada sobre círculo sólido, emblema del movimiento Conciencia Joven Internacional.</desc>
-  <circle cx="60" cy="60" r="58" fill="#1A2530"/>
-  <circle cx="60" cy="52" r="34" fill="#C9A227"/>
-  <circle cx="60" cy="52" r="28" fill="#1A2530"/>
-  <!-- Brazo vertical -->
-  <rect x="54" y="22" width="12" height="72" rx="1.5" fill="#E8C547"/>
-  <!-- Brazo horizontal -->
-  <rect x="34" y="42" width="52" height="12" rx="1.5" fill="#E8C547"/>
-  <!-- Centro -->
-  <circle cx="60" cy="48" r="6" fill="#1A2530"/>
-  <circle cx="60" cy="48" r="3" fill="#E8C547"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="t">
+  <title id="t">Cruz de Conciencia Joven</title>
+  <rect width="64" height="64" rx="16" fill="#FAFAFA"/>
+  <rect x="28" y="10" width="8" height="44" rx="4" fill="#5C5C5F"/>
+  <rect x="14" y="24" width="36" height="8" rx="4" fill="#5C5C5F"/>
 </svg>
