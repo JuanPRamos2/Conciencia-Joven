@@ -1,0 +1,575 @@
+/* ==========================================================================
+   Conciencia Joven Internacional — estilos propios
+   Principio de diseño: colores 100 % sólidos. Sin opacidades, sin
+   fondos semitransparentes y sin glassmorphism.
+   ========================================================================== */
+
+:root {
+  --ink: #1A2530;
+  --ink-soft: #2C3A47;
+  --paper: #F7F3EA;
+  --paper-alt: #EEE8D9;
+  --rule: #C4A35A;
+  --rule-dark: #8C7328;
+  --white: #FFFFFF;
+  --nav-h: 4.5rem;
+
+  --nova-bg: #6E4E0E;
+  --nova-card: #875F12;
+  --nova-ink: #FFF8E7;
+  --nova-accent: #E8C547;
+
+  --gn-bg: #0A2E56;
+  --gn-card: #124A7A;
+  --gn-ink: #F3F7FB;
+  --gn-accent: #D7B15A;
+
+  --cj-bg: #F5F5F7;
+  --cj-card: #FFFFFF;
+  --cj-ink: #1D1D1F;
+  --cj-muted: #3A3A3C;
+  --cj-border: #D1D1D6;
+
+  --mis-bg: #14382C;
+  --mis-card: #1E5644;
+  --mis-ink: #F3F8F5;
+  --mis-accent: #C9A227;
+
+  --apo-bg: #121A22;
+  --apo-card: #243140;
+  --apo-ink: #F4F6F8;
+  --apo-accent: #C9A227;
+
+  --coro-bg: #6A3844;
+  --coro-card: #8A4A58;
+  --coro-ink: #FFF6F7;
+  --coro-accent: #E8C9B0;
+}
+
+/* Base tipográfica y de página */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Source Sans 3", "Segoe UI", sans-serif;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+h1,
+h2,
+h3,
+h4,
+.font-display {
+  font-family: "Cormorant Garamond", Georgia, serif;
+}
+
+/* Compensación por barra fija al usar anclas */
+section[id] {
+  scroll-margin-top: calc(var(--nav-h) + 0.75rem);
+}
+
+/* Enlace de salto: sólido, visible al recibir foco */
+.skip-link {
+  position: absolute;
+  left: 0.75rem;
+  top: -3.5rem;
+  z-index: 80;
+  background: var(--ink);
+  color: var(--paper);
+  padding: 0.6rem 1rem;
+  font-weight: 600;
+}
+
+.skip-link:focus {
+  top: 0.75rem;
+}
+
+/* --------------------------------------------------------------------------
+   Barra de navegación
+   -------------------------------------------------------------------------- */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  height: var(--nav-h);
+  background: var(--paper);
+  border-bottom: 3px solid var(--rule);
+}
+
+.nav-link {
+  color: var(--ink);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0.35rem 0.45rem;
+  border-bottom: 2px solid var(--paper);
+}
+
+.nav-link:hover,
+.nav-link.is-active {
+  border-bottom-color: var(--rule-dark);
+  color: var(--ink);
+}
+
+.nav-panel {
+  display: none;
+  background: var(--paper-alt);
+  border-bottom: 3px solid var(--rule);
+}
+
+.nav-panel.is-open {
+  display: block;
+}
+
+.menu-btn {
+  width: 2.75rem;
+  height: 2.75rem;
+  border: 2px solid var(--ink);
+  background: var(--paper);
+  color: var(--ink);
+}
+
+/* --------------------------------------------------------------------------
+   Diagrama radial de identidad (hero)
+   -------------------------------------------------------------------------- */
+.hero {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.diagram-wrap {
+  position: relative;
+  width: min(34rem, 100%);
+  margin-inline: auto;
+}
+
+.diagram {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.diagram-wedge {
+  cursor: pointer;
+  transition: fill 160ms ease;
+}
+
+.diagram-wedge:hover,
+.diagram-wedge:focus {
+  outline: none;
+}
+
+#wedge-nova { fill: #7A5610; }
+#wedge-nova:hover,
+#wedge-nova:focus { fill: #92681A; }
+
+#wedge-gn { fill: #0E3B6C; }
+#wedge-gn:hover,
+#wedge-gn:focus { fill: #15508F; }
+
+#wedge-conciencia { fill: #E6E6EA; }
+#wedge-conciencia:hover,
+#wedge-conciencia:focus { fill: #FFFFFF; }
+
+#wedge-misiones { fill: #1B4D3E; }
+#wedge-misiones:hover,
+#wedge-misiones:focus { fill: #246652; }
+
+#wedge-apostolados { fill: #1A2530; }
+#wedge-apostolados:hover,
+#wedge-apostolados:focus { fill: #2B3C4C; }
+
+#wedge-corocji { fill: #8E4A59; }
+#wedge-corocji:hover,
+#wedge-corocji:focus { fill: #A65B6D; }
+
+.diagram-label {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  pointer-events: none;
+}
+
+.diagram-label-light { fill: #F7F3EA; }
+.diagram-label-dark { fill: #1A2530; }
+
+.cruz-core {
+  pointer-events: none;
+}
+
+/* Etiquetas HTML alrededor del diagrama en escritorio */
+.diagram-legend {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.6rem;
+  margin-top: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .diagram-legend {
+    display: none;
+  }
+}
+
+.legend-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.7rem 0.8rem;
+  border: 2px solid #C4A35A;
+  background: #243140;
+  color: var(--paper);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+}
+
+.legend-swatch {
+  width: 0.9rem;
+  height: 0.9rem;
+  flex-shrink: 0;
+  border: 1px solid #E8C547;
+}
+
+/* --------------------------------------------------------------------------
+   Ornamento clásico (línea + cruz)
+   -------------------------------------------------------------------------- */
+.ornament {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.ornament .bar {
+  height: 2px;
+  width: 4.5rem;
+  background: var(--rule);
+}
+
+.ornament .mini-cross {
+  width: 14px;
+  height: 14px;
+  position: relative;
+}
+
+.ornament .mini-cross::before,
+.ornament .mini-cross::after {
+  content: "";
+  position: absolute;
+  background: var(--rule);
+}
+
+.ornament .mini-cross::before {
+  left: 6px;
+  top: 0;
+  width: 2px;
+  height: 14px;
+}
+
+.ornament .mini-cross::after {
+  left: 0;
+  top: 4px;
+  width: 14px;
+  height: 2px;
+}
+
+.ornament-on-dark .bar,
+.ornament-on-dark .mini-cross::before,
+.ornament-on-dark .mini-cross::after {
+  background: #E8C547;
+}
+
+/* --------------------------------------------------------------------------
+   Bloques de sección y tarjetas sólidas
+   -------------------------------------------------------------------------- */
+.section-kicker {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.solid-card {
+  border: 2px solid currentColor;
+}
+
+.btn-solid {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 2.75rem;
+  padding: 0.55rem 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  border: 2px solid transparent;
+}
+
+.btn-solid:hover {
+  filter: none;
+}
+
+.btn-wa {
+  background: #1F6B3A;
+  color: #FFFFFF;
+  border-color: #145C2E;
+}
+
+.btn-wa:hover {
+  background: #165C30;
+}
+
+.btn-ig {
+  background: #7A2948;
+  color: #FFFFFF;
+  border-color: #5C1E36;
+}
+
+.btn-ig:hover {
+  background: #641F3A;
+}
+
+.btn-light {
+  background: var(--paper);
+  color: var(--ink);
+  border-color: var(--ink);
+}
+
+.btn-light:hover {
+  background: var(--paper-alt);
+}
+
+.btn-gold {
+  background: #C9A227;
+  color: #1A2530;
+  border-color: #8C7328;
+}
+
+.btn-gold:hover {
+  background: #B8921A;
+}
+
+.contact-bar {
+  border-top: 3px solid currentColor;
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+}
+
+/* Paletas por grupo (fondos y tarjetas siempre opacos) */
+.theme-nova { background: var(--nova-bg); color: var(--nova-ink); }
+.theme-nova .solid-card { background: var(--nova-card); border-color: var(--nova-accent); color: var(--nova-ink); }
+.theme-nova a.card-link { color: var(--nova-accent); }
+
+.theme-gn { background: var(--gn-bg); color: var(--gn-ink); }
+.theme-gn .solid-card { background: var(--gn-card); border-color: var(--gn-accent); color: var(--gn-ink); }
+
+.theme-conciencia { background: var(--cj-bg); color: var(--cj-ink); }
+.theme-conciencia .solid-card { background: var(--cj-card); border-color: var(--cj-border); color: var(--cj-ink); }
+
+.theme-misiones { background: var(--mis-bg); color: var(--mis-ink); }
+.theme-misiones .solid-card { background: var(--mis-card); border-color: #C9A227; color: var(--mis-ink); }
+
+.theme-apostolados { background: var(--apo-bg); color: var(--apo-ink); }
+.theme-apostolados .solid-card { background: var(--apo-card); border-color: #C9A227; color: var(--apo-ink); }
+
+.theme-corocji { background: var(--coro-bg); color: var(--coro-ink); }
+.theme-corocji .solid-card { background: var(--coro-card); border-color: var(--coro-accent); color: var(--coro-ink); }
+
+/* --------------------------------------------------------------------------
+   Fechas, consejeros, videos
+   -------------------------------------------------------------------------- */
+.date-row {
+  display: grid;
+  grid-template-columns: 5.5rem 1fr;
+  gap: 0.85rem;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid currentColor;
+}
+
+.date-row:last-child {
+  border-bottom: 0;
+}
+
+.portrait {
+  width: 100%;
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1.65rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.video-card {
+  display: block;
+  width: 100%;
+  min-height: 12rem;
+  border: 2px solid currentColor;
+  background: #0E161C;
+  color: #F7F3EA;
+  position: relative;
+  text-align: left;
+}
+
+.video-card .play {
+  width: 3.25rem;
+  height: 3.25rem;
+  border: 2px solid #E8C547;
+  background: #1A2530;
+  color: #E8C547;
+  display: grid;
+  place-items: center;
+  font-size: 1.1rem;
+}
+
+.video-frame {
+  display: none;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #0E161C;
+  border: 2px solid #C4A35A;
+}
+
+.video-frame.is-on {
+  display: block;
+}
+
+/* --------------------------------------------------------------------------
+   FAQ, formulario, galería, buzón
+   -------------------------------------------------------------------------- */
+.faq-item + .faq-item {
+  border-top: 2px solid #C9A227;
+}
+
+.faq-btn {
+  width: 100%;
+  text-align: left;
+  background: var(--mis-card);
+  color: var(--mis-ink);
+  padding: 1rem 0.2rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.faq-panel {
+  display: none;
+  padding: 0 0 1rem;
+}
+
+.faq-item.is-open .faq-panel {
+  display: block;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.field span {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  background: #0F2A21;
+  color: #F3F8F5;
+  border: 2px solid #C9A227;
+  padding: 0.7rem 0.8rem;
+  min-height: 2.75rem;
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  outline: 3px solid #E8C547;
+  outline-offset: 0;
+}
+
+.gallery-tile {
+  border: 2px solid #C9A227;
+  background: #0F2A21;
+  min-height: 11rem;
+  display: flex;
+  align-items: flex-end;
+  padding: 0.85rem;
+}
+
+.gallery-tile p {
+  background: #1E5644;
+  color: #F3F8F5;
+  padding: 0.4rem 0.6rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.donate-box {
+  border: 3px solid #C9A227;
+  background: #1A2530;
+  color: #F4F6F8;
+}
+
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.schedule-table th,
+.schedule-table td {
+  border: 2px solid #E8C9B0;
+  padding: 0.75rem 0.85rem;
+  text-align: left;
+}
+
+.schedule-table th {
+  background: #5A2F3A;
+  color: #FFF6F7;
+}
+
+.schedule-table td {
+  background: #8A4A58;
+}
+
+/* Formulario de misiones: mensaje de envío */
+.form-ok {
+  display: none;
+  background: #1E5644;
+  border: 2px solid #C9A227;
+  color: #F3F8F5;
+  padding: 1rem 1.1rem;
+  font-weight: 600;
+}
+
+.form-ok.is-visible {
+  display: block;
+}
+
+/* Foco visible y sólido en toda la página */
+:focus-visible {
+  outline: 3px solid #C9A227;
+  outline-offset: 2px;
+}
+
+/* Pie */
+.site-footer {
+  background: #0E161C;
+  color: #EEE8D9;
+  border-top: 4px solid #C4A35A;
+}
